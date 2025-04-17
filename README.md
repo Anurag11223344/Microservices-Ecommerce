@@ -40,7 +40,11 @@ Acts as the entry point for the application. It accepts user requests to place, 
 
 #### Endpoints:
 
-<pre> | **Method** | **Endpoint** | **Description** | |------------|----------------------------|------------------------------------------| | `POST` | `/api/order/place` | Initiates a new order request | | `GET` | `/api/order/all` | Fetches a list of all orders | | `GET` | `/api/order/status/{id}` | Returns the status of a specific order | | `DELETE` | `/api/order/delete/{id}` | Removes an order from the database | </pre>
+- Method      | Endpoint               | Description
+- POST        | /api/order/place       | Initiates a new order request
+- GET         | /api/order/all         | Fetches a list of all orders
+- GET         | /api/order/status/{id} | Returns the status of a specific order
+- DELETE      | /api/order/delete/{id} | Removes an order from the database
 
   
 
@@ -60,10 +64,10 @@ Manages product stock and inventory details. Validates stock availability during
 
 #### API Endpoints:
 
-Method      | Endpoint                                 | Description
-POST        | /api/inventory/add                       | Adds a new product to inventory
-DELETE      | /api/inventory/delete/{productName}      | Deletes a product from stock
-GET         | /api/inventory/all                       | Lists all products in the inventory5
+- Method      | Endpoint                                 | Description
+- POST        | /api/inventory/add                       | Adds a new product to inventory
+- DELETE      | /api/inventory/delete/{productName}      | Deletes a product from stock
+- GET         | /api/inventory/all                       | Lists all products in the inventory5
 
   
 
@@ -82,9 +86,9 @@ Processes payments once inventory confirms product availability. Sends final ord
 
 #### API Endpoints:
 
-Method        | Endpoint                     | Description
-GET           | /api/payment/all             | Lists all payment transactions
-GET           | /api/payment/status/{item}   | Retrieves payment result for a specific product
+- Method        | Endpoint                     | Description
+- GET           | /api/payment/all             | Lists all payment transactions
+- GET           | /api/payment/status/{item}   | Retrieves payment result for a specific product
 
   
 
